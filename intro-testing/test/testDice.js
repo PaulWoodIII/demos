@@ -4,7 +4,7 @@ var assert = require('chai').assert;
 var expect = require('chai').expect;
 
 class Dice {
-    constructor(name) {
+    constructor(name="my dice") {
             this.name = name;
         }
         /**
@@ -20,6 +20,9 @@ class Dice {
 }
 
 class D20 extends Dice {
+    constructor(color){
+      this.color = color;
+    }
     /**
      * Roll a Die for Randomly between 1-20
      * @override

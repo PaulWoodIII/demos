@@ -16,7 +16,6 @@ class Dice {
         //Override me
         return 0; //Int;
     }
-
 }
 
 class D20 extends Dice {
@@ -93,7 +92,7 @@ var paulsD4 = new D4('red rocket');
 var myRoll = paulsD4.roll();
 
 //Then
-//It is an Int
+//It is a number
 if (typeof myRoll === "number") {
     console.log('pass');
 } else {
@@ -120,7 +119,7 @@ function testManyTimes() {
 }
 testManyTimes();
 
-//it is between 1 and 4
+//it is an integer
 if (myRoll % 1 === 0) {
     console.log('pass');
 } else {
